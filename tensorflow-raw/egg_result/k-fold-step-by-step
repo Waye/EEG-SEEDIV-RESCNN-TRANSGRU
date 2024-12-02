@@ -1,0 +1,24 @@
+[Dataset] ──> Split into [Fold 1], [Fold 2], [Fold 3], [Fold 4], [Fold 5]
+
+Iteration 1:
+  Train + Val Set: [Fold 2 + Fold 3 + Fold 4 + Fold 5]  Test Set: [Fold 1]
+    └── Train Set (70%) + Validation Set (30%)
+        └── [Model Training] ──> Evaluation on [Test Set]
+
+Iteration 2:
+  Train + Val Set: [Fold 1 + Fold 3 + Fold 4 + Fold 5]  Test Set: [Fold 2]
+    └── Train Set (70%) + Validation Set (30%)
+        └── [Model Training] ──> Evaluation on [Test Set]
+
+...
+
+Iteration 5:
+  Train + Val Set: [Fold 1 + Fold 2 + Fold 3 + Fold 4]  Test Set: [Fold 5]
+    └── Train Set (70%) + Validation Set (30%)
+        └── [Model Training] ──> Evaluation on [Test Set]
+
+
+
+
+
+        
